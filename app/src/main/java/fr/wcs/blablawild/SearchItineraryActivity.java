@@ -41,9 +41,8 @@ public class SearchItineraryActivity extends AppCompatActivity{
 
                 if (departure.getText().toString().isEmpty() || destination.getText().toString().isEmpty()) {
                     Context context = getApplicationContext();
-                    CharSequence text = "Complétez tous les champs";
                     int duration = Toast.LENGTH_LONG;
-                    Toast toast = Toast.makeText(context, text, duration);
+                    Toast toast = Toast.makeText(context, R.string.toast, duration);
                     toast.show();
                 }
 

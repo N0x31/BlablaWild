@@ -18,11 +18,7 @@ public class ViewSearchItineraryResultsListActivity extends AppCompatActivity {
         String departure = intent.getStringExtra("Départ");
         String destination = intent.getStringExtra("Destination");
 
-        // Capture the layout's TextView and set the string as its text
-        TextView textView = (TextView) findViewById(R.id.textView);
-        TextView textView2 = (TextView) findViewById(R.id.textView2);
+        setTitle(departure + " >> " + destination);
 
-        textView.setText(departure);
-        textView2.setText(destination);
     }
 }

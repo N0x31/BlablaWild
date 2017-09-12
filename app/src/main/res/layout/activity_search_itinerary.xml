@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:text="Départ" />
+            android:text="@string/depart" />
 
         <EditText
             android:id="@+id/editTextSearchDeparture"
@@ -36,11 +36,11 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
             android:layout_alignLeft="@+id/editTextSearchDeparture"
             android:layout_alignStart="@+id/editTextSearchDeparture"
             android:layout_below="@+id/editTextSearchDeparture"
-            android:text="Destination" />
+            android:layout_marginLeft="10dp"
+            android:text="@string/destination" />
 
         <EditText
             android:id="@+id/editTextSearchDestination"
@@ -56,11 +56,11 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
             android:layout_alignLeft="@+id/editTextSearchDestination"
             android:layout_alignStart="@+id/editTextSearchDestination"
             android:layout_below="@+id/editTextSearchDestination"
-            android:text="Date" />
+            android:layout_marginLeft="10dp"
+            android:text="@string/date" />
 
         <EditText
             android:id="@+id/editTextSearchDate"
@@ -79,7 +79,7 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_gravity="center"
-            android:text="Rechercher" />
+            android:text="@string/rechercher" />
 
     </LinearLayout>
 

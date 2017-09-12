@@ -2,5 +2,9 @@
     <string name="app_name">Bla Bla Wild</string>
     <string name="search_text">Rechercher</string>
     <string name="action_settings">Settings</string>
-    <string name="results">Résultats</string>
+    <string name="toast">Remplissez tous les champs !</string>
+    <string name="depart">Départ</string>
+    <string name="destination">Destination</string>
+    <string name="date">Date</string>
+    <string name="rechercher">Rechercher</string>
 </resources>
