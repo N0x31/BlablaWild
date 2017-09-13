@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".SearchItineraryActivity" android:label="@string/search_text" />
-        <activity android:name=".ViewSearchItineraryResultsListActivity" android:label="@string/results"></activity>
+        <activity android:name=".ViewSearchItineraryResultsListActivity" android:label="@string/rechercher"></activity>
     </application>
 
 </manifest>

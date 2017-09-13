@@ -16,7 +16,7 @@
         android:layout_marginTop="56dp">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/nameTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -26,14 +26,14 @@
             android:id="@+id/editTextSearchDeparture"
             android:layout_width="247dp"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView2"
-            android:layout_alignStart="@+id/textView2"
-            android:layout_below="@+id/textView2"
+            android:layout_alignLeft="@+id/destTitle"
+            android:layout_alignStart="@+id/destTitle"
+            android:layout_below="@+id/destTitle"
             android:ems="10"
             android:inputType="textPersonName" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/destTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/editTextSearchDeparture"
@@ -46,14 +46,14 @@
             android:id="@+id/editTextSearchDestination"
             android:layout_width="249dp"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView2"
-            android:layout_alignStart="@+id/textView2"
-            android:layout_below="@+id/textView2"
+            android:layout_alignLeft="@+id/destTitle"
+            android:layout_alignStart="@+id/destTitle"
+            android:layout_below="@+id/destTitle"
             android:ems="10"
             android:inputType="textPersonName" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/dateTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/editTextSearchDestination"
@@ -66,9 +66,9 @@
             android:id="@+id/editTextSearchDate"
             android:layout_width="251dp"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView3"
-            android:layout_alignStart="@+id/textView3"
-            android:layout_below="@+id/textView3"
+            android:layout_alignLeft="@+id/dateTitle"
+            android:layout_alignStart="@+id/dateTitle"
+            android:layout_below="@+id/dateTitle"
             android:ems="10"
             android:inputType="textPersonName" />
 
