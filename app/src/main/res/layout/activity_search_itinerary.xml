@@ -11,24 +11,23 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_marginTop="56dp">
 
         <TextView
             android:id="@+id/nameTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="30dp"
             android:text="@string/depart" />
 
         <EditText
             android:id="@+id/editTextSearchDeparture"
-            android:layout_width="247dp"
+            android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/destTitle"
             android:layout_alignStart="@+id/destTitle"
             android:layout_below="@+id/destTitle"
+            android:layout_gravity="center"
             android:ems="10"
             android:inputType="textPersonName" />
 
@@ -36,19 +35,20 @@
             android:id="@+id/destTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
             android:layout_alignLeft="@+id/editTextSearchDeparture"
             android:layout_alignStart="@+id/editTextSearchDeparture"
             android:layout_below="@+id/editTextSearchDeparture"
-            android:layout_marginLeft="10dp"
             android:text="@string/destination" />
 
         <EditText
             android:id="@+id/editTextSearchDestination"
-            android:layout_width="249dp"
+            android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/destTitle"
             android:layout_alignStart="@+id/destTitle"
             android:layout_below="@+id/destTitle"
+            android:layout_gravity="center"
             android:ems="10"
             android:inputType="textPersonName" />
 
@@ -56,25 +56,26 @@
             android:id="@+id/dateTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
             android:layout_alignLeft="@+id/editTextSearchDestination"
             android:layout_alignStart="@+id/editTextSearchDestination"
             android:layout_below="@+id/editTextSearchDestination"
-            android:layout_marginLeft="10dp"
             android:text="@string/date" />
 
         <EditText
             android:id="@+id/editTextSearchDate"
-            android:layout_width="251dp"
+            android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/dateTitle"
             android:layout_alignStart="@+id/dateTitle"
             android:layout_below="@+id/dateTitle"
+            android:layout_gravity="center"
             android:ems="10"
             android:inputType="textPersonName" />
 
         <Button
             android:id="@+id/buttonSearch"
-            android:layout_width="332dp"
+            android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"

@@ -20,7 +20,6 @@ public class SearchItineraryActivity extends AppCompatActivity{
 
         final Button buttonSearch;
         buttonSearch = (Button) findViewById(R.id.buttonSearch);
-
         buttonSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

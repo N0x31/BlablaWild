@@ -13,8 +13,8 @@ import java.util.List;
 
 public class ViewSearchItineraryResultsListActivity extends AppCompatActivity {
 
-    ListView listView;
-    TripResultAdapter mResultAdapter;
+    ListView mlistView;
+    TripResultAdapter mResultAdapter;  //variable globale commence par "m"
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,11 +30,9 @@ public class ViewSearchItineraryResultsListActivity extends AppCompatActivity {
         setTitle(departure + " >> " + destination);
 
         //Affichage de la liste
+        mlistView = (ListView) findViewById(R.id.listView);
 
-
-        listView = (ListView) findViewById(R.id.listView);
-
-        ArrayList<TripResultModel> results = new ArrayList<>();
+        ArrayList<TripResultModel> results = new ArrayList<>();//ArrayList = liste d'éléments
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy-hh:mm");
 
@@ -47,7 +45,7 @@ public class ViewSearchItineraryResultsListActivity extends AppCompatActivity {
         }
         mResultAdapter = new TripResultAdapter(this, results);
 
-        listView.setAdapter(mResultAdapter);
+        mlistView.setAdapter(mResultAdapter);
 
 
     }

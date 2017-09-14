@@ -56,7 +56,7 @@ public class TripResultAdapter extends BaseAdapter {
         //sets the text for item name and item description from the current item object
         surname.setText(currentItem.getSurname());
         date.setText(currentItem.getDate().toString());
-        price.setText(String.valueOf(currentItem.getPrice()));
+        price.setText(String.valueOf(currentItem.getPrice())); //String.valueOf > transforme un entier en chaine de caractère
 
         // returns the view for the current row
         return convertView;
