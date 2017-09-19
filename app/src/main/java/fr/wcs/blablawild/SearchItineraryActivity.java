@@ -83,7 +83,7 @@ public class SearchItineraryActivity extends AppCompatActivity{
                 }
 
                 else {
-                    SearchRequestModel obj = new SearchRequestModel(departure.getText().toString(),destination.getText().toString(), new Date());
+                    SearchRequestModel obj = new SearchRequestModel(departure.getText().toString(),destination.getText().toString(), myCalendar.getTime());
                     Intent intent = new Intent(SearchItineraryActivity.this, ViewSearchItineraryResultsListActivity.class);
                     intent.putExtra("Instance", obj);
                     startActivity(intent);
