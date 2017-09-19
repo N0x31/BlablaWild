@@ -68,13 +68,6 @@ public class SearchItineraryActivity extends AppCompatActivity{
             @Override
             public void onClick(View view) {
 
-                InputMethodManager inputManager = (InputMethodManager)
-                        getSystemService(Context.INPUT_METHOD_SERVICE);
-
-                inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),
-                        InputMethodManager.HIDE_NOT_ALWAYS);
-
-
                 if (departure.getText().toString().isEmpty() || destination.getText().toString().isEmpty()) {
                     Context context = getApplicationContext();
                     int duration = Toast.LENGTH_LONG;

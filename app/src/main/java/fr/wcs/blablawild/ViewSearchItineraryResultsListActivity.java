@@ -24,7 +24,7 @@ public class ViewSearchItineraryResultsListActivity extends AppCompatActivity {
         // Get the Intent that started this activity and extract the string
         Intent intent = getIntent();
         SearchRequestModel obj = intent.getParcelableExtra("Instance");
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy-hh:mm");
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy hh:mm");
 
         String departure = obj.getVilleDepart();
         String destination = obj.getVilleDest();
@@ -41,10 +41,10 @@ public class ViewSearchItineraryResultsListActivity extends AppCompatActivity {
 
 
         try {
-            results.add(new TripResultModel("Bruce", sdf.parse("21/02/2017-15:30"), 15));
-            results.add(new TripResultModel("Clark", sdf.parse("21/02/2017-16:00"), 20));
-            results.add(new TripResultModel("Bary", sdf.parse("21/02/2017-16:30"), 16));
-            results.add(new TripResultModel("Lex", sdf.parse("21/02/2017-17:00"), 40));
+            results.add(new TripResultModel("Bruce", sdf.parse("21/02/2017 15:30"), 15));
+            results.add(new TripResultModel("Clark", sdf.parse("21/02/2017 16:00"), 20));
+            results.add(new TripResultModel("Bary", sdf.parse("21/02/2017 16:30"), 16));
+            results.add(new TripResultModel("Lex", sdf.parse("21/02/2017 17:00"), 40));
         } catch (ParseException e) {
         }
         mResultAdapter = new TripResultAdapter(this, results);
