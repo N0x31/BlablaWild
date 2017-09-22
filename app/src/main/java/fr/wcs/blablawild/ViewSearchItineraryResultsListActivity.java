@@ -1,6 +1,5 @@
 package fr.wcs.blablawild;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
@@ -22,29 +21,24 @@ public class ViewSearchItineraryResultsListActivity extends AppCompatActivity {
 
 
         // Get the Intent that started this activity and extract the string
-        Intent intent = getIntent();
-        SearchRequestModel obj = intent.getParcelableExtra("Instance");
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy hh:mm");
 
-        String departure = obj.getVilleDepart();
-        String destination = obj.getVilleDest();
+        SearchRequestModel obj = getIntent().getParcelableExtra("Instance");
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+
+        setTitle(obj.getVilleDepart() + " >> " + obj.getVilleDest());
 
         Toast.makeText(getApplicationContext(), sdf.format(obj.getDateTrajet()), Toast.LENGTH_LONG).show();
-
-        setTitle(departure + " >> " + destination);
 
         //Affichage de la liste
         mlistView = (ListView) findViewById(R.id.listView);
 
         ArrayList<TripResultModel> results = new ArrayList<>();//ArrayList = liste d'éléments
 
-
-
         try {
-            results.add(new TripResultModel("Bruce", sdf.parse("21/02/2017 15:30"), 15));
-            results.add(new TripResultModel("Clark", sdf.parse("21/02/2017 16:00"), 20));
-            results.add(new TripResultModel("Bary", sdf.parse("21/02/2017 16:30"), 16));
-            results.add(new TripResultModel("Lex", sdf.parse("21/02/2017 17:00"), 40));
+            results.add(new TripResultModel("Bruce", sdf.parse("21/02/2017"), 15));
+            results.add(new TripResultModel("Clark", sdf.parse("21/02/2017"), 20));
+            results.add(new TripResultModel("Bary", sdf.parse("21/02/2017"), 16));
+            results.add(new TripResultModel("Lex", sdf.parse("21/02/2017"), 40));
         } catch (ParseException e) {
         }
         mResultAdapter = new TripResultAdapter(this, results);

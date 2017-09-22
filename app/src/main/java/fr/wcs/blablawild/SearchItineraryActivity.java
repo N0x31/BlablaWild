@@ -6,16 +6,12 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
-import java.util.Locale;
 
 public class SearchItineraryActivity extends AppCompatActivity{
 
@@ -24,24 +20,21 @@ public class SearchItineraryActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_itinerary);
 
-        final EditText departure ;
-        final EditText destination ;
-        final EditText date;
-
-        departure = (EditText) findViewById(R.id.editTextSearchDeparture);
-        destination = (EditText) findViewById(R.id.editTextSearchDestination);
-        date = (EditText) findViewById(R.id.editTextSearchDate);
+        final EditText departure = (EditText) findViewById(R.id.editTextSearchDeparture);
+        final EditText destination = (EditText) findViewById(R.id.editTextSearchDestination);
+        final EditText date = (EditText) findViewById(R.id.editTextSearchDate);
 
         date.setFocusable(false);
+
         final Calendar myCalendar = Calendar.getInstance();
         final DatePickerDialog.OnDateSetListener datePicker = new DatePickerDialog.OnDateSetListener() {
 
             @Override
-            public void onDateSet(DatePicker view, int year, int monthOfYear,
-                                  int dayOfMonth) {
+            public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
                 myCalendar.set(Calendar.YEAR, year);
                 myCalendar.set(Calendar.MONTH, monthOfYear);
                 myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+
                 SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
                 date.setText(sdf.format(myCalendar.getTime()));
