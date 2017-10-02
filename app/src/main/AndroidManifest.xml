@@ -19,8 +19,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SearchItineraryActivity" android:label="@string/search_text" />
-        <activity android:name=".ViewSearchItineraryResultsListActivity" android:label="@string/rechercher"></activity>
+        <activity android:name=".SearchItineraryActivity" android:label="@string/search_itinerary" />
+        <activity android:name=".ViewSearchItineraryResultsListActivity" android:label="@string/search"></activity>
     </application>
 
 </manifest>

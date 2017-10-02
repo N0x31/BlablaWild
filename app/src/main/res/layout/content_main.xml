@@ -22,7 +22,7 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="@color/colorAccent"
-            android:text="Rechercher un itinéraire"
+            android:text="@string/search_itinerary"
             android:textColor="@android:color/background_light"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"

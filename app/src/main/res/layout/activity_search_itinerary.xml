@@ -80,7 +80,7 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_gravity="center"
-            android:text="@string/rechercher" />
+            android:text="@string/search" />
 
     </LinearLayout>
 
