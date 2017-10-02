@@ -35,3 +35,13 @@ Critéres de validation :
 - Il n'y a aucune variable globale dans l'application
 - Le titre de ViewSearchItineraryResultsListActivity affiche toujours "Départ » Destination" et un Toast avec la date apparait à l'ouverture de ViewSearchItineraryResultsListActivity.
 - Le constructeur sans paramètre de SearchRequestModel est private.
+
+Partie 4 : Implémenter une liste de trajets
+
+1. Implémente ViewSearchItineraryResultsListActivity pour afficher une liste de trajets fictifs.
+2. Remplis la liste avec des trajets fictifs en faisant le binding.
+
+Critéres de validation
+- La liste de trajets est affichée dans une ListView
+- Les attributs de la classe TripResultAdapter ne sont accessibles que par les getters / setters
+- La date de départ, le prénom du conducteur et le prix apparaissent dans chaque ligne de la liste
