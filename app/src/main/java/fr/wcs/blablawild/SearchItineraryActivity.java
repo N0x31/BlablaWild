@@ -26,7 +26,7 @@ public class SearchItineraryActivity extends AppCompatActivity{
         date.setFocusable(false);
 
         final Calendar myCalendar = Calendar.getInstance();
-        final DatePickerDialog.OnDateSetListener datePicker = new DatePickerDialog.OnDateSetListener() {
+        final DatePickerDialog.OnDateSetListener datePicker = new    DatePickerDialog.OnDateSetListener() {
 
             @Override
             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
@@ -65,7 +65,11 @@ public class SearchItineraryActivity extends AppCompatActivity{
                 }
 
                 else {
-                    SearchRequestModel obj = new SearchRequestModel(departure.getText().toString(),destination.getText().toString(), myCalendar.getTime());
+                    SearchRequestModel obj = new SearchRequestModel(
+                            departure.getText().toString(),
+                            destination.getText().toString(),
+                            myCalendar.getTime());
+
                     Intent intent = new Intent(SearchItineraryActivity.this, ViewSearchItineraryResultsListActivity.class);
                     intent.putExtra("Instance", obj);
                     startActivity(intent);
