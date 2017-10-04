@@ -45,3 +45,12 @@ Critéres de validation
 - La liste de trajets est affichée dans une ListView
 - Les attributs de la classe TripResultAdapter ne sont accessibles que par les getters / setters
 - La date de départ, le prénom du conducteur et le prix apparaissent dans chaque ligne de la liste
+
+Partie 5 : Traduire Bla Bla Wild en anglais
+
+1. Vérifie que tous les textes de ton appli sont dans strings.xml
+2. Crée le fichier values-en/strings.xml avec la traduction en anglais
+
+Critéres de validation
+- Le fichier values-en/strings.xml existe dans le projet avec toutes les textes traduits
+- Sur le device (ou l'émulateur), changer la langue dans les règlages du téléphone modifie automatiquement la langue dans Bla Bla Wild.
